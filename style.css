@@ -4,18 +4,9 @@ body {
 }
 
 .add-on {
-    display: flex;
-    background-color: pink;
+    background-color: greenyellow;
     flex: 1;
     border-radius: 8px;
-    align-items: center;
-    justify-content: center;
-}
-
-.plotter{
-    background-color: aliceblue;
-    width: 75%;
-    height: 75%;
 }
 
 .container {
@@ -83,4 +74,9 @@ button:hover{
     background-color: #e55446;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#func {
+    font-style: italic;
+    font-family: cursive;
 }

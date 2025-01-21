@@ -3,6 +3,7 @@ import { parseExpression } from "./parser.js";
 const numberButtons = document.querySelectorAll(".number");
 const operands = document.querySelectorAll(".operand");
 const constants = document.querySelectorAll(".constant");
+const X = document.querySelector("#func");
 const del = document.querySelector("#del");
 const clr = document.querySelector("#clr");
 const solve = document.querySelector("#sol");
@@ -11,7 +12,12 @@ const display = document.querySelector(".display");
 let displayText = ""
 display.textContent = displayText;
 
-//let func = document.querySelector("#f(x)=");
+
+X.addEventListener("click", () => {
+  displayText += `Hello World!`;
+  display.textContent = displayText;
+})
+
 constants.forEach((button)=>{
   button.addEventListener("click", (event) => {
     displayText += `${event.target.id}`;
