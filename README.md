@@ -1,3 +1,5 @@
+Context Free Grammar:
+
 S  → E
 
 E  → E "+" T
